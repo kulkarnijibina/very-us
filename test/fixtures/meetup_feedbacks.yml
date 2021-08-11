@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meetup: one
+  points: 1
+  description: MyString
+  source_couple_id: 1
+  target_couple_id: 1
+
+two:
+  meetup: two
+  points: 1
+  description: MyString
+  source_couple_id: 1
+  target_couple_id: 1

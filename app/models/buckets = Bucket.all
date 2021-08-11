@@ -1,0 +1,10 @@
+buckets = Bucket.all
+CoupleProfile.each do |couple_profile_1|
+	CoupleProfile.each do |couple_profile_2|
+		match_percentage = ((couple_profile_1.traits && couple_profile_2.traits).count/ couple_profile.traits.count)* 100
+		couple_profile.temp_matches(source_couple_id: couple_profile_1.id, target_couple_id: couple_profile_2, percentage: match_percentage)
+	end
+    buckets.each do |bucket|
+    	matches = couple_profile_1.test_matches.where("percentage > ?", bucket.percentage).sort(:percentage).limit(bucket.limit)
+    end
+end

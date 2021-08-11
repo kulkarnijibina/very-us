@@ -1,0 +1,137 @@
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// Overriding any non-variable SASS must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; }
+
+.admin_icon {
+ max-width: 50px;
+ max-height : 50px;
+}
+
+.admin_splash_img_small {
+  max-width: 100px;
+  max-height : 100px;
+ }
+
+.admin_splash_img {
+ max-width: 300px;
+ max-height : 300px;
+}
+
+#match_date {
+ width: 250px;
+}
+
+.buckets_form_inline{
+ display:inline;
+ padding: 0;
+}
+
+.buckets_panel_form{
+ .label{
+  padding-right: 10px;
+ }
+}
+
+.error{
+ color: red;
+ border-color: red !important;
+}
+
+.inline_display{
+ display: inline;
+}
+
+.delete_add_bucket {
+ border-radius: 200px;
+ display: inline-block;
+ font-weight: bold;
+ font-size: 1.0em;
+ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ line-height: 12px;
+ margin: 11px;
+ padding: 7px 16px 6px;
+ text-decoration: none;
+ background-color: #838a90;
+ background-image: linear-gradient(180deg, #838a90, #414549);
+ text-shadow: #000 0 1px 0;
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+ border: solid 1px #484e53;
+ border-color: #484e53;
+ border-top-color: #616a71;
+ border-right-color: #484e53;
+ border-bottom-color: #363b3f;
+ border-left-color: #484e53;
+ color: #efefef;
+ cursor: pointer;
+}
+
+.bucket_label{
+ display: inline-block;
+ font-weight: bold;
+ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ line-height: 12px;
+ margin: 12px;
+ padding: 7px 16px 6px;
+ text-decoration: none;
+}
+
+.delete_add_bucket:link{
+ color: #efefef;
+ text-decoration: none;
+}
+
+.delete_add_bucket:visited{
+ color: #efefef;
+ text-decoration: none;
+}
+
+.buckets_panel{
+  .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+    width: 9%;
+  }
+
+.table_border{
+  border: none;
+  }
+}
+
+.admin_couple_img_small {
+  max-width: 100px;
+  max-height : 100px;
+ }
+
+
+.select_personality_trait {
+  width: 150px;
+  height : 100px;
+ }
+
+.select_activities {
+  width: 150px;
+  height : 100px;
+ }
+
+.new_couple_profile {
+  float: left;
+ }
+
+#title_bar #titlebar_left {
+    height: 50px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 12%;
+}

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source_couple_id: 
+  target_couple_id: 1
+  status: 1
+  date_time: 2020-08-13 14:06:47
+  location: MyString
+  description: MyString
+
+two:
+  source_couple_id: 
+  target_couple_id: 1
+  status: 1
+  date_time: 2020-08-13 14:06:47
+  location: MyString
+  description: MyString

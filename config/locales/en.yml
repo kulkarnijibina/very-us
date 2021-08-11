@@ -1,0 +1,84 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  errors:
+    internal_server_error: 'Something went wrong!'
+    record_not_found: 'The record you are trying to get does not exists!'
+    throttle_error: 'To many requests, Please try again after some time.'
+
+  models:
+    earn_on:
+      label:
+        onboarding: "Complete Signup/Onboarding"
+        partner_app_download: "Partner Downloads App"
+        per_accept_chat: "Per Accept Chat/Invite"
+        initial_response: "For Intial Response"
+        media_posts_per_photo: "Social Media Posts - Per Photo"
+        verification_status: "Achieving Verification Status"
+        feedback_fill_per_couple_meet: "Filling Feedback Per Couple Meet"
+        reward_points_to_karma_score: "Couple Profile Karma Score"
+        profile_completed_score: "Couple Profile Completion"
+        social_media_connected: "Social Media Connectivity"
+        do_for_fun: "Do For Fun"
+        goals: "Goals"
+        values_needed: "Values Needed"
+
+    burn_on:
+      label:
+        refresh_match_list: "Refresh Match List"
+        refresh_matches_count: "Refresh Matches Count"
+        per_save_for_later: "Per 'Save For Later'"
+        per_save_for_later_duration_in_days: "Per 'Save For Later' Duration In Days"
+        daily_free_per_save_for_later: "Daily Free 'Per Save For Later'"
+        change_preference: "Change Preferences"
+        change_geography: "Change Geography"
+        incognito_mode: "Incognito Mode"
+        incognito_duration_in_mins: "Incognito Duration In Mins"
+        spotlight_focus: "Spotlight Focus"
+        spotlight_duration_in_mins: "Spotlight Duration_In Mins"
+        edit_tags_on_match_list: "Edit Tags displayed on Match List"
+        near_by_location_in_km: "Near By Location In Km"
+    suggest_activity:
+      label:
+        name: "Name"
+        user_id: "User"
+    application_config:
+      label:
+        admin_contact_email: "Admin Contact Email"
+        status: "Status"
+    wallet:
+      messages:
+        earned_coins: "Earned coins on %{type}"
+        burned_coins: "Burned coins on %{type}"
+    couple_profile:
+        messages:
+            personality_traits_validation: "You can not add %{trait}, our system detected irrelevant trait."

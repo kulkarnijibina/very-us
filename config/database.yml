@@ -1,0 +1,36 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: postgres
+  host: <%= ENV['DATABASE_HOST'] || 'localhost' %>
+  port: <%= ENV['DATABASE_PORT'] || '5432' %>
+
+development:
+  <<: *default
+  database: very_us_development
+  host: localhost
+
+dev:
+  <<: *default
+  database: very_us_dev
+
+staging:
+  <<: *default
+  # database: ENV['DATABASE_NAME']
+  # username: ENV['DATABASE_USERNAME']
+  # password: ENV['DATABASE_PASSWORD']
+
+production:
+  <<: *default
+  database: ENV['DATABASE_NAME']
+  username: ENV['DATABASE_USERNAME']
+  password: ENV['DATABASE_PASSWORD']
+
+test: &test
+  <<: *default
+  database: very_us_test
+
+cucumber:
+  <<: *test

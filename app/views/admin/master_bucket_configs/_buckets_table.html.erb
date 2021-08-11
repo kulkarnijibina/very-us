@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>Buckets</th>
+      <% keys.map do |key| %>
+        <th><%= key %></th>
+      <% end %>
+      <th>Threshold Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% buckets.map do |bucket| %>
+      <tr>
+        <td><b><%= "Bucket- #{bucket.id}" %></b></td>
+        <% keys.map do |key| %>
+          <td><%= bucket.percentage_for_day[key] %></td>
+        <% end %>
+        <td><%= bucket.threshold_percentage %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

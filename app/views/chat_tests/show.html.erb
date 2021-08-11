@@ -1,0 +1,25 @@
+<h2>Chat Test</h2>
+<div class="panel-body" id="chating">
+  <%= form_with(id: 'connect_form') do |form|%>
+   <%= form.label :sender_contact%>
+    <%= form.text_field :sender_contact, value: params[:sender_contact] %><br>
+    <%= form.label :receiver_contact%>
+    <%= form.text_field :receiver_contact, value: params[:receiver_contact] %><br>
+    <%= form.submit "connect", class: "btn btn-primary", id: 'connect' %>
+    <%= form.submit "disconnect", class: "btn btn-primary", id: 'disconnect' %>
+  <%end%>
+
+  <%= form_with(id: 'send_message') do |form|%>
+    <%= form.label :your_message%>:<br>
+    <%= form.text_area :content, class: "form-control", id: "content" %><br>
+    <%= form.submit "send", class: "btn btn-primary", id: "send" %>
+    <%= form.hidden_field :chat_id, id: 'chat_id' %>
+    <%= form.hidden_field :token, id: 'token' %>
+  <%end%>
+</div>
+
+<h2>Live Chat</h2>
+<div id="live_chat"></div>
+
+<h2>All Chats</h2>
+<div id="all_chats"></div>

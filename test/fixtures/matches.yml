@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  target_couple_id: 1
+  source_couple_id: 1
+  bucket: one
+  percentage: 1.5
+
+two:
+  target_couple_id: 1
+  source_couple_id: 1
+  bucket: two
+  percentage: 1.5

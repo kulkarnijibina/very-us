@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  anniversary: 2020-07-29
+  orientation: MyString
+  have_children: false
+  have_pets: false
+  do_for_fun: MyString
+  goals: MyString
+  values_needed: MyString
+  meetup_dates: 
+  chat_availability: false
+  primary_user_id: 1
+  secondary_user_id: 1
+
+two:
+  anniversary: 2020-07-29
+  orientation: MyString
+  have_children: false
+  have_pets: false
+  do_for_fun: MyString
+  goals: MyString
+  values_needed: MyString
+  meetup_dates: 
+  chat_availability: false
+  primary_user_id: 1
+  secondary_user_id: 1

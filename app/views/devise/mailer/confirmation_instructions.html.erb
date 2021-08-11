@@ -1,0 +1,6 @@
+	<p>Welcome <%= @email %>!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><%= link_to 'Confirm my account', "localhost:3000?ConfirmationToken=#{@resource.confirmation_token}" %></p>
+<!-- #domain?ConfirmationToken=DPRdW1yaoExWocizLWy7 -->
